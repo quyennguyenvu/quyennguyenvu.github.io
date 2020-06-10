@@ -1,5 +1,5 @@
 {
-  "name": "leo",
+  "name": "quyennguyenvu.github.io",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://quyennguyenvu.github.io",
@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
