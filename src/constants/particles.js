@@ -2,6 +2,10 @@ export const config = {
   particles: {
     number: {
       value: 80,
+      density: {
+        enable: true,
+        value_area: 1200
+      }
     },
     size: {
       value: 2

@@ -50,7 +50,7 @@
   position: relative;
   text-align: center;
   margin: 0 auto;
-  width: 220px;
+  width: 270px;
 }
 
 .social-buttons {
@@ -118,7 +118,7 @@ a:active {
 /* Github Button Styling */
 .github {
   font-size: 25px;
-  padding-top: 10px;
+  padding-top: 8px;
   background-color: #171515;
   color: #ffffff;
   border-color: #171515;
@@ -127,6 +127,36 @@ a:active {
 
 .github:hover {
   color: #171515;
+}
+
+/* Telegram Button Styling */
+.telegram {
+  font-size: 25px;
+  padding-top: 8px;
+  padding-right: 4px;
+  background-color: #0088cc;
+  color: #ffffff;
+  border-color: #0088cc;
+
+}
+
+.telegram :hover {
+  color: #00aff0;
+}
+
+/* Skype Button Styling */
+.skype {
+  font-size: 25px;
+  padding-top: 8px;
+  padding-left: 0px;
+  background-color: #00aff0;
+  color: #ffffff;
+  border-color: #00aff0;
+
+}
+
+.skype :hover {
+  color: #00aff0;
 }
 
 /* Facebook Button Styling */

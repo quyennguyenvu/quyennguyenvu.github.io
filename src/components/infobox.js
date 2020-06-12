@@ -22,6 +22,7 @@ class InfoBox extends React.Component {
 
         <div className="social-box">
           <div className="social-buttons">
+
             <a className="social-margin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leo-quyennguyen/">
               <div className="social-icon linkedin">
                 <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
@@ -34,11 +35,18 @@ class InfoBox extends React.Component {
               </div>
             </a>
 
-            <a className="social-margin" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/leo.quyennv">
-              <div className="social-icon facebook">
-                <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+            <a className="social-margin" rel="noopener noreferrer" href="https://t.me/Quyennv">
+              <div className="social-icon telegram">
+                <FontAwesomeIcon icon={['fab', 'telegram-plane']} />
               </div>
             </a>
+
+            <a className="social-margin" rel="noopener noreferrer" href="skype:vq.leonardo?chat">
+              <div className="social-icon skype">
+                <FontAwesomeIcon icon={['fab', 'skype']} />
+              </div>
+            </a>
+
           </div>
         </div>
 
