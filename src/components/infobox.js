@@ -15,8 +15,8 @@ class InfoBox extends React.Component {
           <div className="headline">
             <h1>Nguyễn Vũ Quyền (Leo)</h1>
             <h2>Software Engineer</h2>
-            <a className="mb5" href="mailto:leo.quyennguyen@gmail.com">leo.quyennguyen@gmail.com</a>
-            <a href={process.env.PUBLIC_URL + "/docs/QuyenNguyen_CV.pdf"} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+            <a className="mb5 highlight" href="mailto:leo.quyennguyen@gmail.com">leo.quyennguyen@gmail.com</a>
+            <a href={process.env.PUBLIC_URL + "/docs/QuyenNguyen_CV.pdf"} target="_blank" className="highlight" rel="noopener noreferrer">Curriculum Vitae</a>
           </div>
         </div>
 

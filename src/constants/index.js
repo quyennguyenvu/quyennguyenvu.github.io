@@ -1,2 +1,2 @@
-import {config as particlesConfig} from './particles'
-export {particlesConfig}
+import { config as particlesConfig } from './particles'
+export { particlesConfig }

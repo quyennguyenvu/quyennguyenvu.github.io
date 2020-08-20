@@ -1,10 +1,10 @@
 export const config = {
   particles: {
     number: {
-      value: 80,
+      value: 12,
       density: {
         enable: true,
-        value_area: 1200
+        value_area: 120
       }
     },
     size: {
@@ -14,7 +14,7 @@ export const config = {
       value: "#fff",
       animation: {
         enable: false,
-        speed: 200,
+        speed: 120,
         sync: true
       },
     },
@@ -44,26 +44,26 @@ export const config = {
     },
     modes: {
       grab: {
-          distance: 180,
-          line_linked: {
-              opacity: 0.35
-          }
+        distance: 200,
+        line_linked: {
+          opacity: 0.35
+        }
       },
       bubble: {
-          distance: 200,
-          size: 80,
-          duration: 0.4
+        distance: 200,
+        size: 80,
+        duration: 0.4
       },
       repulse: {
-          distance: 80,
-          duration: 5
+        distance: 120,
+        duration: 2
       },
       push: {
-          particles_nb: 4
+        particles_nb: 4
       },
       remove: {
-          particles_nb: 2
+        particles_nb: 2
       }
-  }
+    }
   }
 }

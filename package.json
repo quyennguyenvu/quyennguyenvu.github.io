@@ -22,6 +22,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "scripts": {
+    "minify-css": "postcss src/css/parallax.css > src/css/parallax.min.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "install": "^0.13.0",
+    "postcss-cli": "^7.1.1"
   }
 }
