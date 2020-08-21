@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import './fontawesome';
 
 class InfoBox extends React.Component {
 	render() {
 		return (
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<div className="container">
 					<div className="avatar">
 						<img src={process.env.PUBLIC_URL + "/images/avatar.jpg"} alt="avatar" />
