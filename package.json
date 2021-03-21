@@ -1,49 +1,50 @@
 {
-	"name": "portfolio",
-	"version": "0.1.0",
-	"private": true,
-	"homepage": "https://quyennv.xyz",
-	"dependencies": {
-		"@fortawesome/fontawesome-svg-core": "^1.2.28",
-		"@fortawesome/free-brands-svg-icons": "^5.13.0",
-		"@fortawesome/free-solid-svg-icons": "^5.13.0",
-		"@fortawesome/react-fontawesome": "^0.1.10",
-		"@material-ui/core": "^4.10.1",
-		"fontsource-roboto": "^2.1.3",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-particles-js": "^3.2.1",
-		"react-router-dom": "^5.2.0",
-		"react-scripts": "^3.4.1",
-		"websocket-extensions": "^0.1.4"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"predeploy": "yarn build",
-		"deploy": "gh-pages -b master -d build"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"@testing-library/jest-dom": "^4.2.4",
-		"@testing-library/react": "^9.3.2",
-		"@testing-library/user-event": "^7.1.2",
-		"gh-pages": "^3.1.0"
-	}
+  "name": "quyennguyenvu.github.io",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "repository": "git@github.com:quyennguyenvu/quyennguyenvu.github.io.git",
+  "author": "quyennguyenvu <leo.quyennguyen@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://quyennv.xyz",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-particles-js": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "autoprefixer": "^10.2.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^8.0.0",
+    "css-loader": "^5.1.3",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^5.3.1",
+    "postcss": "^8.2.8",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production",
+    "predeploy": "yarn build  && cp CNAME ./dist",
+    "deploy": "gh-pages -b master -d dist"
+  }
 }
