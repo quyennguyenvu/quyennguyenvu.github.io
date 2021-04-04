@@ -1,16 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import AppBackground from '@/components/background'
-import InfoBox from '@/components/infobox'
+import './style.scss'
+import Router from './routes'
 
 const App = () => {
-  return (
-    <>
-      <AppBackground />
-      <InfoBox />
-    </>
-  )
+  return <Router />
 }
 
 ReactDOM.render(<App />, document.querySelector('#root'))

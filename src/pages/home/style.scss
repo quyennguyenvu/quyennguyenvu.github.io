@@ -1,0 +1,268 @@
+.home-wrapper {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.showoff-box {
+  position: relative;
+  margin: 40px auto 20px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+
+  .avatar {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px -8px #fff;
+
+    img {
+      position: absolute;
+      height: 270px;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .headline {
+    position: relative;
+    text-align: center;
+
+    & > * {
+      display: block;
+      background: -webkit-linear-gradient(white, #38495a);
+      background-clip: content-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gmail-address {
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .resume {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      transition: all 0.1s ease-in-out;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      80% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.social-box {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 270px;
+
+  .social-buttons {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 70px;
+    text-align: center;
+    box-shadow: 0px 0px 25px -8px #fff;
+    z-index: 100;
+
+    .social-margin {
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .social-icon {
+        box-sizing: border-box;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 5px solid;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        line-height: 1px;
+        padding-top: 12px;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: rotate(360deg) scale(1.4);
+          background-color: transparent;
+          border-color: transparent;
+        }
+      }
+
+      /* Linkedin Button Styling */
+      .linkedin {
+        font-size: 25px;
+        padding-top: 8px;
+        padding-left: 2px;
+        background-color: #0976b4;
+        color: #ffffff;
+        border-color: #0976b4;
+      }
+
+      .linkedin:hover {
+        color: #0976b4;
+      }
+
+      /* Github Button Styling */
+      .github {
+        font-size: 25px;
+        padding-top: 8px;
+        background-color: #171515;
+        color: #ffffff;
+        border-color: #171515;
+      }
+
+      .github:hover {
+        color: #171515;
+      }
+
+      /* Telegram Button Styling */
+      .telegram {
+        font-size: 25px;
+        padding-top: 8px;
+        padding-right: 4px;
+        background-color: #0088cc;
+        color: #ffffff;
+        border-color: #0088cc;
+      }
+
+      .telegram :hover {
+        color: #00aff0;
+      }
+
+      /* Skype Button Styling */
+      .skype {
+        font-size: 25px;
+        padding-top: 8px;
+        padding-left: 0px;
+        background-color: #00aff0;
+        color: #ffffff;
+        border-color: #00aff0;
+      }
+
+      .skype :hover {
+        color: #00aff0;
+      }
+
+      /* Facebook Button Styling */
+      .facebook {
+        font-size: 25px;
+        padding-top: 8px;
+        border-color: #3b5998;
+        background-color: #3b5998;
+        color: #ffffff;
+      }
+
+      .facebook:hover {
+        color: #3b5998;
+      }
+
+      /* Twitter Button Styling */
+      .twitter {
+        font-size: 22px;
+        padding-top: 10px;
+        padding-left: 2px;
+        border-color: #55acee;
+        background-color: #55acee;
+        color: #ffffff;
+      }
+
+      .twitter:hover {
+        color: #55acee;
+      }
+
+      /* Google+ Button Styling */
+      .google-plus {
+        font-size: 22px;
+        padding-top: 9px;
+        padding-left: 2px;
+        background-color: #dd4b39;
+        color: #ffffff;
+        border-color: #dd4b39;
+      }
+
+      .google-plus :hover {
+        color: #dd4b39;
+      }
+
+      /* Pinterest Button Styling */
+      .pinterest {
+        font-size: 22px;
+        padding-top: 9px;
+        background-color: #cb2027;
+        color: #ffffff;
+        border-color: #cb2027;
+      }
+
+      .pinterest:hover {
+        color: #cb2027;
+      }
+
+      /* Behance Button Styling */
+      .behance {
+        font-size: 22px;
+        padding-top: 9px;
+        background-color: #1769ff;
+        color: #ffffff;
+        border-color: #1769ff;
+      }
+
+      .behance :hover {
+        color: #1769ff;
+      }
+
+      /* Youtube Button Styling */
+      .youtube {
+        font-size: 22px;
+        padding-top: 9px;
+        padding-left: 0px;
+        background-color: #bb0000;
+        color: #ffffff;
+        border-color: #bb0000;
+      }
+
+      .youtube :hover {
+        color: #bb0000;
+      }
+
+      /* Soundcloud Button Styling */
+      .soundcloud {
+        font-size: 22px;
+        padding-top: 9px;
+        padding-left: 0px;
+        background-color: #ff3a00;
+        color: #ffffff;
+        border-color: #ff3a00;
+      }
+
+      .soundcloud :hover {
+        color: #ff3a00;
+      }
+    }
+  }
+}

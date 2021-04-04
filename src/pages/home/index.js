@@ -1,25 +1,33 @@
+import { particles } from '@/config/particles'
+import avatar from '@/static/images/avatar.jpg'
 import { faGithubAlt, faLinkedinIn, faSkype, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Container } from '@material-ui/core'
 import React from 'react'
-import avatar from '../static/images/avatar.jpg'
-import curriculum from '../static/docs/QuyenNguyen_CV.pdf'
+import Particles from 'react-particles-js'
+import './style.scss'
 
-export default function InfoBox() {
+export default function Home() {
   return (
-    <>
-      <div className="container">
+    <Container className="home-wrapper">
+      <Particles params={particles} />
+      <div id="stars1" className="stars"></div>
+      <div id="stars2" className="stars"></div>
+      <div id="stars3" className="stars"></div>
+
+      <div className="showoff-box">
         <div className="avatar">
           <img src={avatar} alt="avatar" />
         </div>
 
         <div className="headline">
-          <h1>Nguyễn Vũ Quyền (Leo)</h1>
+          <h1>Nguyễn Vũ Quyền</h1>
           <h2>Software Engineer</h2>
-          <a className="mb5 highlight" href="mailto:leo.quyennguyen@gmail.com">
-            leo.quyennguyen@gmail.com
+          <a href="/resume" className="resume">
+            Resume
           </a>
-          <a href={curriculum} target="_blank" className="highlight" rel="noopener noreferrer">
-            Curriculum Vitae
+          <a className="gmail-address" href="mailto:leo.quyennguyen@gmail.com">
+            leo.quyennguyen@gmail.com
           </a>
         </div>
       </div>
@@ -61,6 +69,6 @@ export default function InfoBox() {
           </a>
         </div>
       </div>
-    </>
+    </Container>
   )
 }

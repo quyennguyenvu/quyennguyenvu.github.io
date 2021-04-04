@@ -1,0 +1,23 @@
+$orange: rgb(277, 108, 10);
+
+.resume-wrapper {
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #fff;
+  overflow: hidden;
+
+  .resume-body {
+    .highlight {
+      color: $orange;
+    }
+    .project {
+      font-weight: 500;
+    }
+  }
+
+  .bio {
+    background-color: rgb(242, 242, 242);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

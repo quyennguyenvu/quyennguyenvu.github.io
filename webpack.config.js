@@ -1,7 +1,6 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
@@ -12,13 +11,9 @@ module.exports = {
     chunkFilename: '[id].js',
     publicPath: '',
   },
-  optimization: {
-    minimizer: [new UglifyJsPlugin()],
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@components': path.resolve(__dirname, 'src', 'components'),
     },
     extensions: ['.js', '.jsx'],
   },
@@ -32,11 +27,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
           {
+            loader: 'style-loader',
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
@@ -47,6 +42,22 @@ module.exports = {
               },
             },
           },
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [autoprefixer],
+              },
+            },
+          },
+          'sass-loader',
         ],
       },
       {
@@ -85,13 +96,14 @@ module.exports = {
       filename: 'index.html',
       inject: 'body',
     }),
-    new CopyWebpackPlugin(
-      {
-        patterns: [{ from: `${__dirname}/src/static`, to: 'static' }],
-      },
-      {
-        copyUnmodified: true,
-      }
-    ),
+    new CopyWebpackPlugin({
+      patterns: [{ from: `${__dirname}/src/static`, to: 'static' }],
+    }),
   ],
+
+  devServer: {
+    contentBase: './dist',
+    port: 3000,
+    historyApiFallback: true,
+  },
 }
