@@ -11,12 +11,12 @@ export default function Home() {
           <Grid item xs={3} className="avatar">
             <img src={avatar} alt="avatar" width="100%" />
           </Grid>
-          <Grid item container xs={9} direction="column">
+          <Grid item container xs={9} direction="column" justify="space-between">
             <Grid item>
               <h1>NGUYEN VU QUYEN</h1>
               <h2>Software Engineer</h2>
             </Grid>
-            <Grid>
+            <Grid item>
               <h5>Ho Chi Minh - 0869225891 – leo.quyennguyen@gmail.com</h5>
             </Grid>
           </Grid>

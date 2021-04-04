@@ -23,7 +23,7 @@ export default function Home() {
         <div className="headline">
           <h1>Nguyễn Vũ Quyền</h1>
           <h2>Software Engineer</h2>
-          <a href="/resume" className="resume">
+          <a href="/#/resume" className="resume">
             Resume
           </a>
           <a className="gmail-address" href="mailto:leo.quyennguyen@gmail.com">
