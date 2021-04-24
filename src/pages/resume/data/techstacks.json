@@ -3,8 +3,7 @@
     "name": "Programming Languages",
     "items": ["Frontend: Reactjs, JQuery", "Backend: Elixir, Python, Go, PHP"]
   },
-  { "name": "Databases", "items": ["Postgresql, MySQL, MSSQL, Oracle, sqlite"] },
-  { "name": "Cache", "items": ["Redis"] },
+  { "name": "Storages", "items": ["Postgresql, MySQL, MSSQL, Oracle, sqlite", "Redis"] },
   {
     "name": "Architectures",
     "items": [
