@@ -2,7 +2,6 @@ $orange: rgb(277, 108, 10);
 
 .resume-wrapper {
   text-align: justify;
-  text-justify: inter-word;
   background-color: #fff;
   overflow: hidden;
 
@@ -20,4 +19,19 @@ $orange: rgb(277, 108, 10);
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .resume-wrapper {
+    text-align: left;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }

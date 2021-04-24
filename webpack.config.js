@@ -25,27 +25,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-            loader: 'css-loader',
-            options: {
-              sourceMap: false,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [autoprefixer],
-              },
-            },
-          },
-        ],
-      },
-      {
-        test: /\.s[ac]ss$/i,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           'style-loader',
           'css-loader',
