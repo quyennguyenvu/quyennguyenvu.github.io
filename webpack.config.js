@@ -11,6 +11,11 @@ module.exports = {
     chunkFilename: '[id].js',
     publicPath: '',
   },
+  performance: {
+    assetFilter: function (assetFilename) {
+      return assetFilename.endsWith('.css') || assetFilename.endsWith('.js')
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
