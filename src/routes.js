@@ -1,8 +1,9 @@
 import React from 'react'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
+import loadable from '@loadable/component'
 
-import Home from './pages/home'
-import Resume from './pages/resume'
+const Home = loadable(() => import('./pages/home'))
+const Resume = loadable(() => import(/* webpackPrefetch: true */ './pages/resume'))
 
 const Router = () => {
   return (

@@ -1,4 +1,3 @@
-import avatar from '@/static/images/avatar.jpg'
 import { Container, Divider, Grid, Typography } from '@material-ui/core'
 import React from 'react'
 import BasicSection from './components/basicSection'
@@ -13,7 +12,7 @@ export default function Resume() {
       <Grid container className="resume-body" spacing={5} direction="column">
         <Grid item container spacing={3} className="bio">
           <Grid item xs={3} className="avatar">
-            <img src={avatar} alt="avatar" width="100%" />
+            <img src="/static/images/avatar.jpg" alt="avatar" width="100%" />
           </Grid>
           <Grid item container xs={9} direction="column" justify="space-between">
             <Grid item>

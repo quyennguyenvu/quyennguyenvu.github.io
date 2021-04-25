@@ -1,5 +1,4 @@
 import { particles } from '@/config/particles'
-import avatar from '@/static/images/avatar.jpg'
 import { faGithubAlt, faLinkedinIn, faSkype, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Container } from '@material-ui/core'
@@ -17,7 +16,7 @@ export default function Home() {
 
       <div className="showoff-box">
         <div className="avatar">
-          <img src={avatar} alt="avatar" />
+          <img src="/static/images/avatar.jpg" alt="avatar" />
         </div>
 
         <div className="headline">
