@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <Grid item container spacing={3}>
       <Grid item xs={12} md={3}>
-        <Typography variant="h5" className="headings">
+        <Typography variant="h5" className="heading">
           Experience
         </Typography>
       </Grid>
