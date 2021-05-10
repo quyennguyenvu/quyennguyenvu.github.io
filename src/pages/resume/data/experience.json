@@ -6,8 +6,8 @@
       {
         "name": "Opollo",
         "description": "Opollo is an admin management tool to centralize businesses",
-        "contributes": ["POMS", "PCMS"],
-        "techstack": "Elixir, Reactjs, kibana, elasticsearch"
+        "contributes": ["Purchase order management system", "Pricing control management system"],
+        "techstack": "Elixir, Reactjs, redis, kibana, elasticsearch"
       }
     ]
   },

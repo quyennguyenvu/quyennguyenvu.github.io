@@ -1,15 +1,15 @@
 import { Grid, Typography } from '@material-ui/core'
 import React from 'react'
 
-export default function BasicSection({ title, categories }) {
+export default function BasicSection({ heading, categories }) {
   return (
     <Grid item container spacing={3}>
-      <Grid item xs={3}>
-        <Typography variant="h5" align="right">
-          {title}
+      <Grid item xs={12} md={3}>
+        <Typography variant="h5" className="headings">
+          {heading}
         </Typography>
       </Grid>
-      <Grid item container xs={9} direction="column">
+      <Grid item container xs={12} md={9} direction="column">
         {categories.map((category, categoryId) => {
           return (
             <React.Fragment key={categoryId}>

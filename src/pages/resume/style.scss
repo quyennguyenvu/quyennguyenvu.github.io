@@ -30,6 +30,14 @@ $orange: rgb(277, 108, 10);
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .resume-wrapper {
+    .period {
+      text-align: right;
+    }
+    .headings {
+      text-align: right;
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

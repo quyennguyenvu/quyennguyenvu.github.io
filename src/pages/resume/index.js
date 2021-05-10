@@ -1,4 +1,6 @@
-import { Container, Divider, Grid, Typography } from '@material-ui/core'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Container, Divider, Grid, Hidden, Typography } from '@material-ui/core'
 import React from 'react'
 import BasicSection from './components/basicSection'
 import Experience from './components/experience'
@@ -11,10 +13,12 @@ export default function Resume() {
     <Container maxWidth="md" className="resume-wrapper">
       <Grid container className="resume-body" spacing={5} direction="column">
         <Grid item container spacing={3} className="bio">
-          <Grid item xs={3} className="avatar">
-            <img src="/static/images/avatar.jpg" alt="avatar" width="100%" />
-          </Grid>
-          <Grid item container xs={9} direction="column" justify="space-between">
+          <Hidden only={['xs', 'sm']}>
+            <Grid item md={3} className="avatar">
+              <img src="/static/images/avatar.jpg" alt="avatar" width="100%" />
+            </Grid>
+          </Hidden>
+          <Grid item container md={8} xs={12} direction="column" justify="space-between">
             <Grid item>
               <h1>NGUYEN VU QUYEN</h1>
               <h2>Software Engineer</h2>
@@ -23,15 +27,22 @@ export default function Resume() {
               <h5>Ho Chi Minh - 0869225891 – leo.quyennguyen@gmail.com</h5>
             </Grid>
           </Grid>
+          <Hidden only={['xs', 'sm']}>
+            <Grid item md={1}>
+              <a href="/#/">
+                <FontAwesomeIcon icon={faHome} />
+              </a>
+            </Grid>
+          </Hidden>
         </Grid>
 
         <Grid item container spacing={3}>
-          <Grid item xs={3}>
-            <Typography variant="h5" align="right">
+          <Grid item xs={12} md={3}>
+            <Typography variant="h5" className="headings">
               Career Objective
             </Typography>
           </Grid>
-          <Grid item container xs={9} spacing={2}>
+          <Grid item container xs={12} md={9} spacing={2}>
             <Grid item>
               <Typography>
                 After years in software development industry, I have been experienced with many of software languages,
@@ -46,10 +57,10 @@ export default function Resume() {
         <Experience />
 
         <Divider variant="fullWidth" />
-        <BasicSection title={'Tech Stacks'} categories={techstacks} />
+        <BasicSection heading={'Tech Stacks'} categories={techstacks} />
 
         <Divider variant="fullWidth" />
-        <BasicSection title={'Education'} categories={education} />
+        <BasicSection heading={'Education'} categories={education} />
 
         {/* end resume body */}
       </Grid>
