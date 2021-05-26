@@ -5,9 +5,9 @@
     "projects": [
       {
         "name": "Opollo",
-        "description": "Opollo is an admin management tool to centralize businesses",
+        "description": "Opollo is an admin management tool to centralize businesses for ecommerce including: product management, order management, CRM, pricing... Using elixir with reactjs, our system can handle more than 1000 requests at once (thanks to beams) , UI/UX running smoothly although it still needs to improve alot",
         "contributes": ["Purchase order management system", "Pricing control management system"],
-        "techstack": "Elixir, Reactjs, redis, kibana, elasticsearch"
+        "techstack": "Elixir, Phoenix, Reactjs, webpack, redis, kibana, elasticsearch"
       }
     ]
   },

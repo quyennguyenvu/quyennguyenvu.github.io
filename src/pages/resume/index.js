@@ -45,9 +45,11 @@ export default function Resume() {
           <Grid item container xs={12} md={9} spacing={2}>
             <Grid item>
               <Typography>
-                After years in software development industry, I have been experienced with many of software languages,
-                mainly building API services, websites. I enjoy learning new things in my free time. My hobbies are
-                reading, playing basketball, traveling, cycling and hangout with my friends.
+                Seeking a challenging position in an organization where I can use my knowledge and skills to grow and
+                expand an organization as well as myself.
+              </Typography>
+              <Typography>
+                Mentor and guide team members, setting strategy and monitoring progress towards goals.
               </Typography>
             </Grid>
           </Grid>
