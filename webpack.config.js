@@ -87,7 +87,7 @@ module.exports = {
   ],
 
   devServer: {
-    contentBase: './dist',
+    static: './',
     port: 3000,
     historyApiFallback: true,
   },
