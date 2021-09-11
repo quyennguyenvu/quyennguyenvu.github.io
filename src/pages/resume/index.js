@@ -18,7 +18,7 @@ export default function Resume() {
               <img src="/static/images/avatar.jpg" alt="avatar" width="100%" />
             </Grid>
           </Hidden>
-          <Grid item container md={8} xs={12} direction="column" justify="space-between">
+          <Grid item container md={8} xs={12} direction="column" justifyContent="space-between">
             <Grid item>
               <h1>NGUYEN VU QUYEN</h1>
               <h2>Software Engineer</h2>
