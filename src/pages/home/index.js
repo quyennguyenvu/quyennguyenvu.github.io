@@ -1,5 +1,10 @@
 import { particles } from '@/config/particles'
-import { faGithubAlt, faLinkedinIn, faSkype, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
+import {
+  faGithubAlt,
+  faLinkedinIn,
+  faSkype,
+  faTelegramPlane,
+} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Container } from '@material-ui/core'
 import React from 'react'
@@ -16,7 +21,7 @@ export default function Home() {
 
       <div className="showoff-box">
         <div className="avatar">
-          <img src="/static/images/avatar.jpg" alt="avatar" />
+          <img src="/static/images/fav_avt.jpg" alt="avatar" />
         </div>
 
         <div className="headline">
@@ -55,13 +60,21 @@ export default function Home() {
             </div>
           </a>
 
-          <a className="social-margin" rel="noopener noreferrer" href="https://t.me/Quyennv">
+          <a
+            className="social-margin"
+            rel="noopener noreferrer"
+            href="https://t.me/Quyennv"
+          >
             <div className="social-icon telegram">
               <FontAwesomeIcon icon={faTelegramPlane} />
             </div>
           </a>
 
-          <a className="social-margin" rel="noopener noreferrer" href="skype:vq.leonardo?chat">
+          <a
+            className="social-margin"
+            rel="noopener noreferrer"
+            href="skype:vq.leonardo?chat"
+          >
             <div className="social-icon skype">
               <FontAwesomeIcon icon={faSkype} />
             </div>

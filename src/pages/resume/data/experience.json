@@ -5,9 +5,15 @@
     "projects": [
       {
         "name": "Opollo",
-        "description": "Opollo is an admin management tool to centralize businesses for ecommerce including: product management, order management, CRM, pricing... Using elixir with reactjs, our system can handle more than 1000 requests at once (thanks to beams) , UI/UX running smoothly although it still needs to improve alot",
-        "contributes": ["Purchase order management system", "Pricing control management system"],
-        "techstack": "Elixir, Phoenix, Reactjs, webpack, redis, kibana, elasticsearch"
+        "description": "Opollo is an admin management tool to centralize businesses for ecommerce including: product management, order management, CRM, pricing... Using elixir with reactjs, our system can handle more than 1000 requests at once (thanks to beams), UI/UX running smoothly although it still needs to improve alot.",
+        "contributes": [
+          "Pricing control management system.",
+          "Product management system.",
+          "Channel management system.",
+          "CRM (Livechat, Product reviews, Auto replies, Chatbot FPT).",
+          "Purchase order management system."
+        ],
+        "techstack": "Elixir, Phoenix, Reactjs, webpack, redis, kibana, elasticsearch, kafka"
       }
     ]
   },
@@ -29,7 +35,7 @@
   },
   {
     "company": "Grab",
-    "period": "(06/2018 – 10/2018)",
+    "period": "(06/2018 - 10/2018)",
     "projects": [
       {
         "name": "Partner gateway",
@@ -43,12 +49,12 @@
     ]
   },
   {
-    "company": "Admicro – VCCorp",
-    "period": "(09/2015 – 06/2018)",
+    "company": "Admicro - VCCorp",
+    "period": "(09/2015 - 06/2018)",
     "projects": [
       {
         "name": "Adx, Admarket, PRContent",
-        "description": "Web app for campaign, banner management, export reports.",
+        "description": "Built inhouse system to manage advertising banners and campaigns. There are various types of banners we have to make to fit in our digital newspapers such as: dantri, afamily, kenh14...",
         "contributes": [
           "Optimized website performance by refactored code.",
           "Wrote store procedures in order to interact with database due to restricted security."
@@ -59,25 +65,31 @@
   },
   {
     "company": "VietIS Corporation",
-    "period": "(10/2014 – 09/2015)",
+    "period": "(10/2014 - 09/2015)",
     "projects": [
       {
         "name": "OffShore: worked with Viettel",
-        "description": "Web app for expanded program on immunization.",
-        "contributes": ["Worked with MVC model.", "Writing query using lambda expression."],
+        "description": "Web app for expanded program on immunization (EPI).",
+        "contributes": [
+          "Built complex report screens.",
+          "Wrote queries using lambda expression."
+        ],
         "techstack": ".NET (Entity Framework), Oracle, Jquery"
       },
       {
         "name": "UrJapan",
-        "description": "A website which helps Thai tourists come to visit Japan.",
-        "contributes": ["Developed responsive website, optimized UI/UX.", "Implemented google and facebook APIs."],
+        "description": "A guiding website which helps Thai tourists come to visit Japan. It shows a map with many tourist destinations, transportation could use to move there, description at each location (historical stories, cuisines, games...)",
+        "contributes": [
+          "Developed responsive website, optimized UI/UX.",
+          "Implemented google and facebook APIs."
+        ],
         "techstack": "PHP (CakePHP), MySQL, Bootstrap, Jquery"
       }
     ]
   },
   {
     "company": "SmartOSC",
-    "period": "(10/2014 – 09/2015)",
+    "period": "(10/2014 - 09/2015)",
     "projects": [
       {
         "name": "Vaxiorder",
@@ -87,7 +99,7 @@
       },
       {
         "name": "Cava-bien",
-        "description": "An e-commerce website for selling women’s clothes, shoes and accessories based on Magento.",
+        "description": "An e-commerce website about women fashion using Magento.",
         "contributes": [],
         "techstack": "PHP (Magento Enterprise 1.13), MySQL"
       }
@@ -101,7 +113,7 @@
         "description": "Built booking field management eco-system for VECGROUP.",
         "contributes": [
           "Analyzed customer needs to write WBS.",
-          "Designed database structure, project architecture follow repositories-service pattern, and implemented business logics with my partner."
+          "Designed database structure, project architecture follow repositories-service pattern, and implemented business logics with my team."
         ],
         "techstack": "PHP 7.2 (Laravel 5.8), MySQL, JWT"
       },
@@ -110,7 +122,7 @@
         "description": "Built booking system for travel agency.",
         "contributes": [
           "Analyzed customer needs to write WBS.",
-          "Designed database structure, file structure follow repository pattern, and implemented business logics with my partner."
+          "Designed database structure, file structure follow repository pattern, and implemented business logics with my team."
         ],
         "techstack": "PHP 5.6 (Laravel 4.2), Angular 1, MySQL"
       }
