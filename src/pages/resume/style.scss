@@ -1,43 +1,70 @@
-$orange: rgb(277, 108, 10);
+$orange: #ff6c0a;
+$grey: #f2f2f2;
 
 .resume-wrapper {
-  text-align: justify;
   background-color: #fff;
   overflow: hidden;
+  padding-bottom: 50px;
+  position: relative;
 
-  .resume-body {
-    .highlight {
-      color: $orange;
-    }
-    .project {
-      font-weight: bold;
+  .home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    a {
+      margin-right: 10px;
     }
   }
 
-  .bio {
-    background-color: rgb(242, 242, 242);
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .resume-body {
+    position: relative;
+
+    h5 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .name {
+      margin-top: 40px;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        background-color: #fff;
+        padding: 10px 30px;
+        border: $orange 1px solid;
+      }
+    }
+    .title {
+      background-color: $grey;
+      margin-top: 80px;
+      padding-bottom: 10px;
+      text-align: center;
+      border-bottom: $orange 2px solid;
+      border-top: $orange 1px solid;
+    }
+
+    .left-grid {
+      text-align: right;
+      .contact-icon {
+        margin-left: 5px;
+        opacity: 0.5;
+      }
+    }
+    .right-grid {
+      border-left: $orange 2px solid;
+    }
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .resume-wrapper {
-    text-align: left;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .resume-wrapper {
-    .period {
-      text-align: right;
-    }
-    .heading {
-      text-align: right;
-    }
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

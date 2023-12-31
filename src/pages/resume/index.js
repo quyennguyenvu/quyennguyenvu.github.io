@@ -1,79 +1,120 @@
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faFilePdf,
+  faEnvelope,
+  faPhone,
+  faLocationDot,
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Container, Divider, Grid, Hidden, Typography } from '@material-ui/core'
+import { Container, Grid, Hidden, Typography } from '@material-ui/core'
+import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer'
 import React from 'react'
-import BasicSection from './components/basicSection'
 import Experience from './components/experience'
-import education from './data/education.json'
-import techstacks from './data/techstacks.json'
+import ResumePDF from '../resume_pdf'
 import './style.scss'
+import TechStack from './components/techstack'
 
 export default function Resume() {
   return (
     <Container maxWidth="md" className="resume-wrapper">
-      <Grid container className="resume-body" spacing={5} direction="column">
-        <Grid item container spacing={3} className="bio">
-          <Hidden only={['xs', 'sm']}>
-            <Grid item md={3} className="avatar">
-              <img src="/static/images/avatar.jpg" alt="avatar" width="100%" />
-            </Grid>
-          </Hidden>
-          <Grid
-            item
-            container
-            md={8}
-            xs={12}
-            direction="column"
-            justifyContent="space-between"
+      <Hidden only={['xs', 'sm']}>
+        <Grid item className="home-button">
+          <a href="/#/">
+            <FontAwesomeIcon icon={faHome} />
+          </a>
+          <PDFDownloadLink
+            document={<ResumePDF />}
+            fileName="NguyenVuQuyen-Resume.pdf"
           >
-            <Grid item>
-              <h1>NGUYEN VU QUYEN</h1>
-              <h2>Software Engineer</h2>
-            </Grid>
-            <Grid item>
-              <h5>Ho Chi Minh - 0869225891 - leo.quyennguyen@gmail.com</h5>
-            </Grid>
-          </Grid>
-          <Hidden only={['xs', 'sm']}>
-            <Grid item md={1}>
-              <a href="/#/">
-                <FontAwesomeIcon icon={faHome} />
-              </a>
-            </Grid>
-          </Hidden>
+            <FontAwesomeIcon icon={faFilePdf} />
+          </PDFDownloadLink>
+        </Grid>
+      </Hidden>
+      <Grid container className="resume-body" spacing={6} direction="column">
+        <Grid item className="name">
+          <h1>NGUYEN VU QUYEN</h1>
+        </Grid>
+        <Grid item className="title">
+          <h2>Senior Software Engineer</h2>
         </Grid>
 
-        <Grid item container spacing={3}>
-          <Grid item xs={12} md={3}>
-            <Typography variant="h5" className="heading">
-              Career Objective
-            </Typography>
-          </Grid>
-          <Grid item container xs={12} md={9} spacing={2}>
-            <Grid item>
-              <Typography>
-                Seeking a challenging position in an organization where I can
-                use my knowledge and skills to grow and expand an organization
-                as well as myself.
-              </Typography>
-              <Typography>
-                Mentor and guide team members, setting strategy and monitoring
-                progress towards goals.
-              </Typography>
+        <Grid item>
+          <Grid container spacing={6} direction="row">
+            <Grid item xs={12} md={4} className="left-grid">
+              <Grid container spacing={3} direction="column">
+                <Grid item>
+                  <Typography variant="h5">Contact</Typography>
+                  <Typography>
+                    leo.quyennguyen@gmail.com
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      className="contact-icon"
+                    />
+                  </Typography>
+                  <Typography>
+                    (+84) 869225891
+                    <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+                  </Typography>
+                  <Typography>
+                    Ho Chi Minh City
+                    <FontAwesomeIcon
+                      icon={faLocationDot}
+                      className="contact-icon"
+                    />
+                  </Typography>
+                  <Typography>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/quyennguyenvu"
+                    >
+                      Github
+                    </a>
+                    <FontAwesomeIcon icon={faGithub} className="contact-icon" />
+                  </Typography>
+                  <Typography>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/leo-quyennguyen"
+                    >
+                      Linkedin
+                    </a>
+                    <FontAwesomeIcon
+                      icon={faLinkedinIn}
+                      className="contact-icon"
+                    />
+                  </Typography>
+                </Grid>
+
+                <Grid item>
+                  <Typography variant="h5">Education</Typography>
+                  <Typography>Master's Degree</Typography>
+                  <Typography>Computer Engineering</Typography>
+                  <Typography>
+                    Hanoi University of Science and Technology
+                  </Typography>
+                  <Typography>September 2016 - October 2018</Typography>
+                  <Typography>Hanoi</Typography>
+                </Grid>
+
+                <Grid item>
+                  <Typography variant="h5">Languages</Typography>
+                  <Typography>Native: Vietnamese</Typography>
+                  <Typography>Foreign: English</Typography>
+                </Grid>
+
+                <Grid item>
+                  <TechStack />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={12} md={8} className="right-grid">
+              <Experience />
             </Grid>
           </Grid>
         </Grid>
-
-        <Divider variant="fullWidth" />
-        <Experience />
-
-        <Divider variant="fullWidth" />
-        <BasicSection heading={'Tech Stacks'} categories={techstacks} />
-
-        <Divider variant="fullWidth" />
-        <BasicSection heading={'Education'} categories={education} />
-
-        {/* end resume body */}
       </Grid>
     </Container>
   )
