@@ -10,7 +10,7 @@
   },
   {
     "name": "Storages",
-    "items": ["Postgresql, MySQL", "MongoDB", "Redis", "Oracle, MSSQL, sqlite"]
+    "items": ["Postgresql, MySQL", "Oracle, MSSQL, sqlite", "MongoDB", "Redis"]
   },
   {
     "name": "Tools",
@@ -20,7 +20,7 @@
     "name": "Architectures",
     "items": [
       "OOP, DDD",
-      "RESTful services, gRPC, graphQL",
+      "RESTful, gRPC, graphQL",
       "Design pattern: Microservices, repositories-services, CQRS"
     ]
   }

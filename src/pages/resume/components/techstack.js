@@ -1,10 +1,11 @@
-import { Grid, Typography } from '@material-ui/core'
 import React from 'react'
-import techstacks from '@/static/data/techstacks.json'
+
+import techstacks from '@leoo/static/data/techstacks.json'
+import { Grid, Typography } from '@material-ui/core'
 
 export default function TechStack() {
   return (
-    <>
+    <Grid item>
       <Typography variant="h5">Tech Stacks</Typography>
       <Grid container spacing={2}>
         {techstacks.map((category, categoryId) => {
@@ -24,6 +25,6 @@ export default function TechStack() {
           )
         })}
       </Grid>
-    </>
+    </Grid>
   )
 }

@@ -1,19 +1,19 @@
 import React from 'react'
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
-import loadable from '@loadable/component'
 
-const Home = loadable(() => import('./pages/home'))
-const Resume = loadable(() => import(/* webpackPrefetch: true */ './pages/resume'))
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom'
 
-const Router = () => {
+import Home from './pages/home'
+import Resume from './pages/resume'
+
+function Router() {
   return (
     <HashRouter>
-      <Switch>
-        <Route exact={true} path="/" component={Home} />
-        <Route path="/resume" component={Resume} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/resume" element={<Resume />} />
         {/* Not Found */}
-        <Route component={() => <Redirect to="/" />} />
-      </Switch>
+        <Route element={() => <Navigate to="/" />} />
+      </Routes>
     </HashRouter>
   )
 }

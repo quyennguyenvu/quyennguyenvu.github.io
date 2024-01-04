@@ -1,3 +1,6 @@
+import React from 'react'
+
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
   faFilePdf,
@@ -5,15 +8,14 @@ import {
   faPhone,
   faLocationDot,
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Container, Grid, Hidden, Typography } from '@material-ui/core'
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer'
-import React from 'react'
+import { PDFDownloadLink } from '@react-pdf/renderer'
+
 import Experience from './components/experience'
+import TechStack from './components/techstack'
 import ResumePDF from '../resume_pdf'
 import './style.scss'
-import TechStack from './components/techstack'
 
 export default function Resume() {
   return (
@@ -90,7 +92,7 @@ export default function Resume() {
 
                 <Grid item>
                   <Typography variant="h5">Education</Typography>
-                  <Typography>Master's Degree</Typography>
+                  <Typography>Master&#39;s Degree</Typography>
                   <Typography>Computer Engineering</Typography>
                   <Typography>
                     Hanoi University of Science and Technology
@@ -105,11 +107,10 @@ export default function Resume() {
                   <Typography>Foreign: English</Typography>
                 </Grid>
 
-                <Grid item>
-                  <TechStack />
-                </Grid>
+                <TechStack />
               </Grid>
             </Grid>
+
             <Grid item xs={12} md={8} className="right-grid">
               <Experience />
             </Grid>

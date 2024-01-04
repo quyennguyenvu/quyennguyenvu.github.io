@@ -1,4 +1,5 @@
-import { particles } from '@/config/particles'
+import React from 'react'
+
 import {
   faGithubAlt,
   faLinkedinIn,
@@ -7,14 +8,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Container } from '@material-ui/core'
-import React from 'react'
-import Particles from 'react-particles-js'
+
 import './style.scss'
 
 export default function Home() {
   return (
     <Container className="home-wrapper">
-      <Particles params={particles} />
       <div id="stars1" className="stars"></div>
       <div id="stars2" className="stars"></div>
       <div id="stars3" className="stars"></div>
