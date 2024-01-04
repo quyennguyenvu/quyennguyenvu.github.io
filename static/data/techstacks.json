@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Programming Languages",
+    "items": [
+      "Elixir (Phoenix)",
+      "Python (flask, fastAPI)",
+      "Golang, PHP",
+      "Javascript (ReactJS, jQuery)"
+    ]
+  },
+  {
+    "name": "Storages",
+    "items": ["Postgresql, MySQL", "Oracle, MSSQL, sqlite", "MongoDB", "Redis"]
+  },
+  {
+    "name": "Tools",
+    "items": ["Git, SVN", "Docker, Unix"]
+  },
+  {
+    "name": "Architectures",
+    "items": [
+      "OOP, DDD",
+      "RESTful, gRPC, graphQL",
+      "Design pattern: Microservices, repositories-services, CQRS"
+    ]
+  }
+]

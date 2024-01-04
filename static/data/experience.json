@@ -1,0 +1,49 @@
+[
+  {
+    "company": "Onpoint",
+    "title": "Senior Software Engineer",
+    "period": "November 2020 - Current",
+    "location": "Ho Chi Minh City",
+    "achievements": [
+      "Led feature development, collaborated with product owners, conducted code reviews, and monitored system issues as a core team member.",
+      "Integrated with e-commerce platforms (Shopee, Lazada, Tiki) and warehouses (TNC, MCL, TNSL), ensuring seamless order fulfillment and precise stock synchronization. Surpassed 250k orders in the 2023 campaigns, reflecting a 70% increase compared to 2022.",
+      "Contributed to a chat system integrated with Lazada, Shopee, and Facebook. Integrated FPT chatbot and Kasatria, improving response rates. Implemented an in-house auto-reply system for specific cases.",
+      "Built and managed a module overseeing operations for 300+ stores across platforms, ensuring smooth stock and order synchronization.",
+      "Engineered systems for price and stock management, including product deactivation below the threshold and alert mechanisms to prevent losses. Implemented user action logging for audits.",
+      "Collaborated with the SRE team to ensure smooth execution of deployment processes.",
+      "On-call during every mega campaign to react promptly to incidents.",
+      "Mentored new members, assisting them in transitioning to functional programming and comprehending business logic for task execution.. Led a team of two members, delivering three features within two months."
+    ]
+  },
+  {
+    "company": "Teko",
+    "title": "Software Engineer",
+    "period": "November 2018 - November 2020",
+    "location": "Ho Chi Minh City",
+    "achievements": [
+      "Led the development and release of a finance management system for accountants, utilizing RabbitMQ for seamless communication with other services.",
+      "Wrote unit tests, increasing test coverage to over 92%.",
+      "Monitored and addressed errors.",
+      "Developed the initial version of Tekowner service for Tekone, employing a Golang-based monorepo microservices architecture."
+    ]
+  },
+  {
+    "company": "Grab",
+    "title": "Software Engineer",
+    "period": "May 2018 - November 2018",
+    "location": "Ho Chi Minh City",
+    "achievements": [
+      "Collaborated with engineers to evaluate API gateways like Tyk, Kong, Apigee, determining the suitable tool for our requirements."
+    ]
+  },
+  {
+    "title": "Early Experience",
+    "period": "September 2015 - May 2018",
+    "location": "Hanoi City",
+    "achievements": [
+      "Admicro - VCCorp: Optimized website performance by refactoring code and authored stored procedures to interact with the database, addressing security restrictions.",
+      "VietIS Corporation: Crafted complex report screens by writing queries using lambda expressions.",
+      "SmartOSC: Learned MVC architecture with PHP and developed a module for a Magento-based website."
+    ]
+  }
+]
