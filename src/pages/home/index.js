@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 
 import {
   faGithubAlt,
@@ -7,16 +7,18 @@ import {
   faTelegramPlane,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { particles } from '@leoo/config/particles'
 import { Container } from '@material-ui/core'
+import Particles from '@tsparticles/react'
 
 import './style.scss'
 
 export default function Home() {
+  const options = useMemo(() => particles, [])
+
   return (
     <Container className="home-wrapper">
-      <div id="stars1" className="stars"></div>
-      <div id="stars2" className="stars"></div>
-      <div id="stars3" className="stars"></div>
+      <Particles id="tsParticles" options={options} />
 
       <div className="showoff-box">
         <div className="avatar">
