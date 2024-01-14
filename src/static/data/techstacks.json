@@ -3,24 +3,36 @@
     "name": "Programming Languages",
     "items": [
       "Elixir (Phoenix)",
-      "Python (flask, fastAPI)",
+      "Python (Flask, FastAPI)",
       "Golang, PHP",
-      "Javascript (ReactJS, jQuery)"
+      "Javascript: ReactJS, jQuery"
     ]
   },
   {
     "name": "Storages",
-    "items": ["Postgresql, MySQL", "Oracle, MSSQL, sqlite", "MongoDB", "Redis"]
+    "items": [
+      "Postgresql, MySQL",
+      "Oracle, MSSQL, sqlite",
+      "Elasticsearch, MongoDB",
+      "Redis"
+    ]
   },
   {
     "name": "Tools",
-    "items": ["Git, SVN", "Docker, Unix"]
+    "items": [
+      "Git, SVN",
+      "Docker, Unix",
+      "jenkin, rancher",
+      "grafana, kibana",
+      "AWS: EC2, S3"
+    ]
   },
   {
     "name": "Architectures",
     "items": [
       "OOP, DDD",
       "RESTful, gRPC, graphQL",
+      "Message brokers: RabbitMQ, Kafka",
       "Design pattern: Microservices, repositories-services, CQRS"
     ]
   }
