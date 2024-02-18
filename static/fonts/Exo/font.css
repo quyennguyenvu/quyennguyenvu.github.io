@@ -5,3 +5,9 @@
   font-display: swap;
   src: url('/static/fonts/Exo/static/Exo-Medium.ttf');
 }
+
+@font-face {
+  font-family: 'Exo';
+  font-weight: bold;
+  src: url('/static/fonts/Exo/static/Exo-Bold.ttf');
+}
