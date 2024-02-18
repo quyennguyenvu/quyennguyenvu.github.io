@@ -17,14 +17,20 @@ export default function Experience() {
             <Text>
               {exp.period} / {exp.location}
             </Text>
-            {exp.achievements &&
-              exp.achievements.map((acm, acmId) => {
-                return (
-                  <React.Fragment key={`${expId}_${acmId}`}>
-                    <BulletItem>{acm}</BulletItem>
-                  </React.Fragment>
-                )
-              })}
+            <Text>
+              <Text style={styles.textBold}>Tech stacks: </Text>
+              {exp.techstack}
+            </Text>
+            <View style={styles.expWrapper}>
+              {exp.achievements &&
+                exp.achievements.map((acm, acmId) => {
+                  return (
+                    <React.Fragment key={`${expId}_${acmId}`}>
+                      <BulletItem>{acm}</BulletItem>
+                    </React.Fragment>
+                  )
+                })}
+            </View>
           </View>
         )
       })}

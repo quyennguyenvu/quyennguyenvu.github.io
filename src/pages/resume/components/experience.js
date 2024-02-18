@@ -22,6 +22,10 @@ export default function Experience() {
                 <Typography>
                   {exp.period} / {exp.location}
                 </Typography>
+                <Typography>
+                  <b>Tech stacks: </b>
+                  {exp.techstack}
+                </Typography>
                 {exp.achievements && (
                   <ul className="achievements">
                     {exp.achievements.map((acm, acmId) => {

@@ -4,8 +4,9 @@
     "title": "Senior Software Engineer",
     "period": "November 2020 - Current",
     "location": "Ho Chi Minh City",
+    "techstack": "Elixir, Phoenix, Postgresql, Reactjs, Go, Redis, Kibana, Elasticsearch, Kafka, AWS, Docker",
     "achievements": [
-      "Led feature development, collaborated with product owners, conducted code reviews, and monitored system issues as a core team member.",
+      "Led feature development utilizing Elixir and the Phoenix framework. Collaborated with product owners, conducted code reviews, and monitored system issues as a core team member.",
       "Integrated with e-commerce platforms (Shopee, Lazada, Tiki) and warehouses (TNC, MCL, TNSL), ensuring seamless order fulfillment and precise stock synchronization. Surpassed 250k orders in the 2023 campaigns, reflecting a 70% increase compared to 2022.",
       "Contributed to a chat system integrated with Lazada, Shopee, and Facebook. Integrated FPT chatbot and Kasatria, improving response rates. Implemented an in-house auto-reply system for specific cases.",
       "Built and managed a module overseeing operations for 300+ stores across platforms, ensuring smooth stock and order synchronization.",
@@ -20,8 +21,9 @@
     "title": "Software Engineer",
     "period": "November 2018 - November 2020",
     "location": "Ho Chi Minh City",
+    "techstack": "Microservices, Python, Go, Postgresql, Rabbitmq, Docker, k8s, Grafana, AWS",
     "achievements": [
-      "Led the development and release of a finance management system for accountants, utilizing RabbitMQ for seamless communication with other services.",
+      "Led the development and release of a finance management system for accountants, utilizing Python (Flask) and RabbitMQ for seamless communication with other services.",
       "Wrote unit tests, increasing test coverage to over 92%.",
       "Monitored and addressed errors.",
       "Developed the initial version of Tekowner service for Tekone, employing a Golang-based monorepo microservices architecture."
@@ -32,6 +34,7 @@
     "title": "Software Engineer",
     "period": "May 2018 - November 2018",
     "location": "Ho Chi Minh City",
+    "techstack": "Microservices, Go, Docker, AWS, Kibaba, Grafana, Datadog",
     "achievements": [
       "Collaborated with engineers to evaluate API gateways like Tyk, Kong, Apigee, determining the suitable tool for our requirements."
     ]
@@ -40,6 +43,7 @@
     "title": "Early Experience",
     "period": "September 2015 - May 2018",
     "location": "Hanoi City",
+    "techstack": "PHP (CakePHP, Laravel), MySQL, Jquery, Bootstrap, JWT",
     "achievements": [
       "Admicro - VCCorp: Optimized website performance by refactoring code and authored stored procedures to interact with the database, addressing security restrictions.",
       "VietIS Corporation: Crafted complex report screens by writing queries using lambda expressions.",

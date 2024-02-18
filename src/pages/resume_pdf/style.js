@@ -4,6 +4,27 @@ import { StyleSheet, Font } from '@react-pdf/renderer'
 
 const orange = '#ff6c0a'
 
+// disable break words
+// ref: https://stackoverflow.com/questions/74373068/pdf-generate-enable-text-wrap-and-disable-break-words
+export const chunkSubstr = (str, size) => {
+  const numChunks = Math.ceil(str.length / size)
+  const chunks = new Array(numChunks)
+
+  for (let i = 0, o = 0; i < numChunks; ++i, o += size) {
+    chunks[i] = str.substr(o, size)
+  }
+
+  return chunks
+}
+
+Font.registerHyphenationCallback((word) => {
+  if (word.length > 16) {
+    return chunkSubstr(word, 14)
+  } else {
+    return [word]
+  }
+})
+
 Font.register({
   family: 'Exo',
   format: 'truetype',
@@ -38,10 +59,13 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
   },
+  expWrapper: {
+    marginTop: 10,
+  },
   row: {
     display: 'flex',
     flexDirection: 'row',
-    paddingHorizontal: 15,
+    paddingHorizontal: 5,
   },
   bullet: {
     height: '100%',
