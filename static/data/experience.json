@@ -4,7 +4,7 @@
     "title": "Senior Software Engineer",
     "period": "November 2020 - Current",
     "location": "Ho Chi Minh City",
-    "techstack": "Elixir, Phoenix, Postgresql, Reactjs, Go, Redis, Kibana, Elasticsearch, Kafka, AWS, Docker",
+    "techstack": "Elixir, Phoenix, Postgresql, Reactjs, Go, Redis, Kibana, Elasticsearch, RabbitMQ, Kafka, NATS, AWS, Docker",
     "achievements": [
       "Led feature development utilizing Elixir and the Phoenix framework. Collaborated with product owners, conducted code reviews, and monitored system issues as a core team member.",
       "Integrated with e-commerce platforms (Shopee, Lazada, Tiki) and warehouses (TNC, MCL, TNSL), ensuring seamless order fulfillment and precise stock synchronization. Surpassed 250k orders in the 2023 campaigns, reflecting a 70% increase compared to 2022.",
