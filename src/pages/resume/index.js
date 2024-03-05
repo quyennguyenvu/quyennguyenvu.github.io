@@ -92,13 +92,30 @@ export default function Resume() {
 
                 <Grid item>
                   <Typography variant="h5">Education</Typography>
-                  <Typography>Master&#39;s Degree</Typography>
-                  <Typography>Computer Engineering</Typography>
-                  <Typography>
-                    Hanoi University of Science and Technology
-                  </Typography>
-                  <Typography>September 2016 - October 2018</Typography>
-                  <Typography>Hanoi</Typography>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12}>
+                      <Typography>
+                        <b>The Degree Of Master</b>
+                      </Typography>
+                      <Typography>Computer Engineering</Typography>
+                      <Typography>
+                        Hanoi University of Science and Technology
+                      </Typography>
+                      <Typography>September 2016 - October 2018</Typography>
+                      <Typography>Hanoi</Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography>
+                        <b>The Degree Of Engineer</b>
+                      </Typography>
+                      <Typography>Information Technology</Typography>
+                      <Typography>
+                        Hanoi University of Civil Engineering
+                      </Typography>
+                      <Typography>September 2009 - April 2014</Typography>
+                      <Typography>Hanoi</Typography>
+                    </Grid>
+                  </Grid>
                 </Grid>
 
                 <Grid item>

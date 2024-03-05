@@ -1,5 +1,5 @@
+import fontBold from '@leoo/static/fonts/Exo/static/Exo-Bold.ttf'
 import font from '@leoo/static/fonts/Exo/static/Exo-Medium.ttf'
-import fontBold from '@leoo/static/fonts/Exo/static/Exo-SemiBold.ttf'
 import { StyleSheet, Font } from '@react-pdf/renderer'
 
 const orange = '#ff6c0a'

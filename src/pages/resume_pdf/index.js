@@ -29,11 +29,20 @@ export default function ResumePDF() {
 
               <View style={styles.item}>
                 <Text style={styles.h5}>Education</Text>
-                <Text>Master&#39;s Degree</Text>
-                <Text>Computer Engineering</Text>
-                <Text>Hanoi University of Science and Technology</Text>
-                <Text>September 2016 - October 2018</Text>
-                <Text>Hanoi</Text>
+                <View style={[styles.paddingBottom5]}>
+                  <Text style={[styles.h6]}>The Degree Of Master</Text>
+                  <Text>Computer Engineering</Text>
+                  <Text>Hanoi University of Science and Technology</Text>
+                  <Text>September 2016 - October 2018</Text>
+                  <Text>Hanoi</Text>
+                </View>
+                <View style={[styles.paddingBottom5]}>
+                  <Text style={[styles.h6]}>The Degree Of Engineer</Text>
+                  <Text>Information Technology</Text>
+                  <Text>Hanoi University of Civil Engineering</Text>
+                  <Text>September 2009 - April 2014</Text>
+                  <Text>Hanoi</Text>
+                </View>
               </View>
 
               <View style={styles.item}>
