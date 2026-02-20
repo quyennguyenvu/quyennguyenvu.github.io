@@ -8,7 +8,7 @@
 
 ## Run project local
 
-```
+```bash
 yarn install
 yarn start
 ```
@@ -19,7 +19,7 @@ yarn start
 
 The settings inside `package.json`
 
-```
+```bash
 yarn deploy
 ```
 
